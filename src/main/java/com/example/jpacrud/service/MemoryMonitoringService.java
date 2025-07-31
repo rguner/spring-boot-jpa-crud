@@ -17,7 +17,7 @@ public class MemoryMonitoringService {
         MemoryUsage heapUsage = memoryBean.getHeapMemoryUsage();
         MemoryUsage nonHeapUsage = memoryBean.getNonHeapMemoryUsage();
 
-        logger.info("Memory Usage after {}: Heap: {} MB / {} MB, Non-Heap: {} MB / {} MB",
+        logger.info("Memory Usage {}: Heap: {} MB / {} MB, Non-Heap: {} MB / {} MB",
             operation,
             heapUsage.getUsed() / 1024 / 1024,
             heapUsage.getMax() / 1024 / 1024,
